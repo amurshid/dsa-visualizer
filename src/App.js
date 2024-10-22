@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
 
 function App() {
+  const handleButtonClick = (buttonName) => {
+    alert("You clicked " + buttonName);
+  };
+
   return (
-    <div className="App">
-      
-      
+    <div className='container'> 
+      <button onClick={() => handleButtonClick('Data Structures')}>Data Structures</button>
+      <button onClick={() => handleButtonClick('Algorithms')}>Algorithms</button>
     </div>
   );
 }
