@@ -1,4 +1,4 @@
-button {
+/* button {
     background-color: transparent;
     font-size: xx-large;
     margin: 10px;
@@ -10,13 +10,51 @@ button {
 
 button:hover {
     background-color: rgb(23, 86, 141);
-}
-
-body {
-    background-color: black;
-}
-
+} 
 .container{
     border: 1px solid white;
     margin-top: 5%;
+} */
+
+body {
+    margin: 50px;
+    background-color: rgb(37, 34, 44);
+}
+
+.home-page {
+    font-size: 25px;
+}
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; 
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 60px;
+    display: block;
+}
+
+nav ul li ul {
+    display: none;   
+    position: absolute;
+}
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Change to your desired color */
+    line-height: 50%;
+}
+nav ul li ul li a:hover {
+    background-color: rgb(51, 48, 66);
 }
